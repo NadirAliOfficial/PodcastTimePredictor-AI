@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import Ridge
@@ -37,7 +38,7 @@ model.fit(X_train, y_train)
 predictions = model.predict(X_test)
 
 # Evaluation
-rmse = mean_squared_error(y_test, predictions, squared=False)
+rmse = np.sqrt(mean_squared_error(y_test, predictions))
 print(f"Test RMSE: {rmse:.2f}")
 
 # Predict new sample

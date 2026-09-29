@@ -10,7 +10,7 @@ A simple machine learning model that predicts the duration of a podcast episode 
 
 ## How to Run
 ```bash
-pip install pandas scikit-learn
+pip install -r requirements.txt
 python predictor.py
 ```
 
@@ -21,15 +21,3 @@ python predictor.py
 
 ## License
 MIT
-```
-
----
-
-Let me know if you want to add:
-- Streamlit UI
-- Real dataset (Spotify/Apple Podcast API)
-- GitHub Action for deployment
-
-Ready when you are 👍
-<!-- updated: 2025-12-08-r01 -->
-
